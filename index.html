@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilote IA | Votre Copilote IA pour PME</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .bg-navy { background-color: #0A1628; }
+        .text-cyan { color: #00D4AA; }
+        .bg-cyan { background-color: #00D4AA; }
+        .border-cyan { border-color: #00D4AA; }
+        .gradient-text {
+            background: linear-gradient(90deg, #00D4AA, #00B894);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-navy text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-navy/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter flex items-center gap-2">
+                <span class="text-cyan">Pilote</span> IA
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <a href="#services" class="hover:text-cyan transition">Services</a>
+                <a href="#about" class="hover:text-cyan transition">À propos</a>
+                <a href="#contact" class="hover:text-cyan transition">Contact</a>
+            </div>
+            <a href="#contact" class="bg-cyan text-navy px-5 py-2 rounded-full text-sm font-bold hover:scale-105 transition transform">Réserver un audit</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center">
+                <h1 class="text-5xl lg:text-7xl font-bold tracking-tight mb-6">
+                    Votre <span class="gradient-text">copilote IA</span>.
+                </h1>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+                    On pilote l'IA. Vous pilotez votre business. <br class="hidden md:block"> Automatisez vos tâches répétitives et libérez votre croissance.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-cyan text-navy px-8 py-4 rounded-lg font-bold text-lg hover:shadow-[0_0_20px_rgba(0,212,170,0.4)] transition">Démarrer l'automatisation</a>
+                    <a href="#services" class="border border-white/20 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/5 transition">Découvrir nos services</a>
+                </div>
+            </div>
+        </div>
+        <!-- Background Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-cyan/10 via-transparent to-transparent -z-0"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Nos solutions d'implémentation</h2>
+                <p class="text-gray-400">Des outils concrets pour des résultats immédiats.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-navy border border-white/10 hover:border-cyan/50 transition group">
+                    <div class="w-12 h-12 bg-cyan/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="search" class="text-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Audit IA Stratégique</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Nous analysons vos processus pour identifier les tâches à fort potentiel d'automatisation.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-navy border border-white/10 hover:border-cyan/50 transition group">
+                    <div class="w-12 h-12 bg-cyan/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="bot" class="text-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Automatisation Workflow</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Mise en place d'agents IA pour la rédaction de devis, le tri d'emails et le service client.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-navy border border-white/10 hover:border-cyan/50 transition group">
+                    <div class="w-12 h-12 bg-cyan/10 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="trending-up" class="text-cyan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Accompagnement & Formation</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Nous formons vos équipes pour qu'elles maîtrisent les nouveaux outils déployés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">Pourquoi <span class="text-cyan">Pilote IA</span> ?</h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Le monde change. L'intelligence artificielle n'est plus une option, c'est un moteur de croissance. Mais pour une PME, la complexité technique est un frein.
+                </p>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    Notre mission est simple : agir comme votre copilote. Nous ne nous contentons pas de vous donner des outils, nous les intégrons directement dans votre quotidien pour que vous puissiez vous concentrer sur l'essentiel : votre métier.
+                </p>
+                <div class="flex gap-8">
+                    <div>
+                        <div class="text-3xl font-bold text-cyan">100%</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-widest">Focus PME</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-cyan">Expert</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-widest">Veille Constante</div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-square bg-gradient-to-br from-cyan/20 to-transparent rounded-3xl border border-cyan/30 flex items-center justify-center">
+                    <i data-lucide="rocket" class="w-32 h-32 text-cyan opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white/5">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4">Prêt pour le décollage ?</h2>
+            <p class="text-gray-400 mb-12">Réservez votre audit gratuit de 30 minutes pour identifier vos gains d'efficacité.</p>
+            
+            
+<form action="https://formspree.io/f/mljjldja" method="POST" class="space-y-4 text-left">
+    
+    <div class="grid md:grid-cols-2 gap-4">
+        <!-- Champ Nom -->
+        <input 
+            type="text" 
+            name="nom_client" 
+            placeholder="Nom" 
+            required 
+            class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:border-cyan outline-none transition text-white"
+        >
+        
+        <!-- Champ Email -->
+        <input 
+            type="email" 
+            name="email_client" 
+            placeholder="Email" 
+            required 
+            class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:border-cyan outline-none transition text-white"
+        >
+    </div>
+
+    <!-- Champ Entreprise -->
+    <input 
+        type="text" 
+        name="entreprise" 
+        placeholder="Nom de votre entreprise" 
+        class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:border-cyan outline-none transition text-white"
+    >
+
+    <!-- Champ Message -->
+    <textarea 
+        name="message_besoin" 
+        placeholder="Votre besoin (optionnel)" 
+        rows="4" 
+        class="w-full bg-navy border border-white/10 rounded-lg px-4 py-3 focus:border-cyan outline-none transition text-white"
+    ></textarea>
+
+    <input type="hidden" name="source" value="site_web_principal">
+
+    <!-- Bouton d'envoi -->
+    <button 
+        type="submit" 
+        class="w-full bg-cyan text-navy font-bold py-4 rounded-lg hover:scale-[1.02] transition transform"
+    >
+        Envoyer ma demande
+    </button>
+</form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 text-center text-gray-500 text-sm">
+        <div class="mb-6 text-xl font-bold text-white">
+            Pilote <span class="text-cyan">IA</span>
+        </div>
+        <p>&copy; 2026 Pilote IA. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
